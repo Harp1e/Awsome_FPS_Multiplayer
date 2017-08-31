@@ -10,6 +10,9 @@ public class FPSPlayerAnimations : MonoBehaviour
     string VELOCITY_Y = "VelocityY";
     string CROUCH = "Crouch";
     string CROUCHWALK = "CrouchWalk";
+    string STAND_SHOOT = "StandShoot";
+    string CROUCH_SHOOT = "CrouchShoot";
+    string RELOAD = "Reload";
 
     void Awake () 
 	{
@@ -34,5 +37,22 @@ public class FPSPlayerAnimations : MonoBehaviour
     public void PlayerCrouchWalk (float magnitude)
     {
         anim.SetFloat (CROUCHWALK, magnitude);
+    }
+
+    public void Shoot (bool isCrouching)
+    {
+        if (isCrouching)
+        {
+            anim.SetTrigger (CROUCH_SHOOT);
+        }
+        else
+        {
+            anim.SetTrigger (STAND_SHOOT);
+        }
+    }
+
+    public void ReloadGun ()
+    {
+        anim.SetTrigger (RELOAD);
     }
 }
