@@ -1518,6 +1518,8 @@ GameObject:
   - component: {fileID: 114877214753650554}
   - component: {fileID: 114062845444766978}
   - component: {fileID: 114635536985240180}
+  - component: {fileID: 114987375339283998}
+  - component: {fileID: 114371921029681464}
   m_Layer: 0
   m_Name: FPS Player
   m_TagString: Untagged
@@ -9067,6 +9069,18 @@ MonoBehaviour:
   - {fileID: 1519473420722660}
   - {fileID: 1783639549983690}
   - {fileID: 1744239028035224}
+--- !u!114 &114371921029681464
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1335451254941152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f45f2786751ee244f937d3520ed94d8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  concrete_Impact: {fileID: 100002, guid: 2b4ffdf4a64f87d4ca3c0de925e6d343, type: 2}
 --- !u!114 &114635536985240180
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9177,6 +9191,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shootClip: {fileID: 8300000, guid: fde722301da517f429eaec7a286baea1, type: 3}
   reloadClip: {fileID: 8300000, guid: dd37bc8e9362aae4fba8007a3287374d, type: 3}
+--- !u!114 &114987375339283998
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1335451254941152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 794d0d617f339944eb338653a32362ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!124 &124558878427369700
 Behaviour:
   m_ObjectHideFlags: 1
