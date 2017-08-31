@@ -45,6 +45,9 @@ public class FPSController : MonoBehaviour
     float fireRate = 15f;
     float nextTimeToFire = 0f;
 
+    [SerializeField] WeaponManager handsWeapon_Manager;
+    FPSHandsWeapon current_Hands_Weapon;
+
 
 	void Start () 
 	{
@@ -62,6 +65,8 @@ public class FPSController : MonoBehaviour
         weapon_Manager.Weapons[0].SetActive (true);
         current_Weapon = weapon_Manager.Weapons[0].GetComponent<FPSWeapon> ();
 
+        handsWeapon_Manager.Weapons[0].SetActive (true);
+        current_Hands_Weapon = handsWeapon_Manager.Weapons[0].GetComponent<FPSHandsWeapon> ();
     }
 	
 	void Update () 
@@ -235,11 +240,13 @@ public class FPSController : MonoBehaviour
             nextTimeToFire = Time.time + 1f / fireRate;
             playerAnimation.Shoot (is_Crouching);
             current_Weapon.Shoot ();
+            current_Hands_Weapon.Shoot ();
         }
 
         if (Input.GetKeyDown (KeyCode.R))
         {
             playerAnimation.ReloadGun ();
+            current_Hands_Weapon.Reload ();
         }
     }
 
@@ -251,8 +258,9 @@ public class FPSController : MonoBehaviour
             {
                 ResetWeapon ();
                 weapon_Manager.Weapons[0].SetActive (true);
+                handsWeapon_Manager.Weapons[0].SetActive (true);
                 current_Weapon = weapon_Manager.Weapons[0].GetComponent<FPSWeapon> ();
-
+                current_Hands_Weapon = handsWeapon_Manager.Weapons[0].GetComponent<FPSHandsWeapon> ();
                 playerAnimation.ChangeController (true);
             }
         }
@@ -263,7 +271,9 @@ public class FPSController : MonoBehaviour
             {
                 ResetWeapon ();
                 weapon_Manager.Weapons[1].SetActive (true);
+                handsWeapon_Manager.Weapons[1].SetActive (true);
                 current_Weapon = weapon_Manager.Weapons[1].GetComponent<FPSWeapon> ();
+                current_Hands_Weapon = handsWeapon_Manager.Weapons[1].GetComponent<FPSHandsWeapon> ();
 
                 playerAnimation.ChangeController (false);
             }
@@ -275,7 +285,9 @@ public class FPSController : MonoBehaviour
             {
                 ResetWeapon ();
                 weapon_Manager.Weapons[2].SetActive (true);
+                handsWeapon_Manager.Weapons[2].SetActive (true);
                 current_Weapon = weapon_Manager.Weapons[2].GetComponent<FPSWeapon> ();
+                current_Hands_Weapon = handsWeapon_Manager.Weapons[2].GetComponent<FPSHandsWeapon> ();
 
                 playerAnimation.ChangeController (false);
             }
@@ -288,6 +300,11 @@ public class FPSController : MonoBehaviour
         {
             weapon_Manager.Weapons[i].SetActive (false);
         }
+        for (int i = 0; i < handsWeapon_Manager.Weapons.Length; i++)
+        {
+            handsWeapon_Manager.Weapons[i].SetActive (false);
+        }
         current_Weapon = null;
+        current_Hands_Weapon = null;
     }
 }

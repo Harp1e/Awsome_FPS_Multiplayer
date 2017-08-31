@@ -2397,13 +2397,14 @@ GameObject:
   - component: {fileID: 4776235935203538}
   - component: {fileID: 95005251737814294}
   - component: {fileID: 82187142113587586}
+  - component: {fileID: 114979748525849008}
   m_Layer: 0
   m_Name: deagle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1521577083303248
 GameObject:
   m_ObjectHideFlags: 1
@@ -3468,6 +3469,7 @@ GameObject:
   - component: {fileID: 4380699604479156}
   - component: {fileID: 95026828945848390}
   - component: {fileID: 82910899542161946}
+  - component: {fileID: 114772878769050304}
   m_Layer: 0
   m_Name: m4a1
   m_TagString: Untagged
@@ -3590,6 +3592,7 @@ GameObject:
   - component: {fileID: 4159756583485470}
   - component: {fileID: 95089713612278720}
   - component: {fileID: 82737169845442552}
+  - component: {fileID: 114893913249069640}
   m_Layer: 0
   m_Name: ak47
   m_TagString: Untagged
@@ -4203,6 +4206,7 @@ GameObject:
   - component: {fileID: 124558878427369700}
   - component: {fileID: 81131229016466420}
   - component: {fileID: 114773163073252430}
+  - component: {fileID: 114304449719614982}
   m_Layer: 0
   m_Name: FPS Camera
   m_TagString: MainCamera
@@ -9048,6 +9052,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6636c1a607ee0b94e8952bbed330fe44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114304449719614982
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1958719242577962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65e93be0edce34544b611fcf21c97d88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Weapons:
+  - {fileID: 1519473420722660}
+  - {fileID: 1783639549983690}
+  - {fileID: 1744239028035224}
 --- !u!114 &114635536985240180
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9074,6 +9093,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6636c1a607ee0b94e8952bbed330fe44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114772878769050304
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1744239028035224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b42ad435ab204ee49bc4bae59ca9940f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shootClip: {fileID: 8300000, guid: 93f9c3363bf680b46b725c07791f988a, type: 3}
+  reloadClip: {fileID: 8300000, guid: a2eeccbe4afb5b342a8b6e440b9d6529, type: 3}
 --- !u!114 &114773163073252430
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9118,6 +9150,33 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   weapon_Manager: {fileID: 114251542051879026}
+  handsWeapon_Manager: {fileID: 114304449719614982}
+--- !u!114 &114893913249069640
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1783639549983690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b42ad435ab204ee49bc4bae59ca9940f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shootClip: {fileID: 8300000, guid: 8077d84082459fd4ba579dda0e473e20, type: 3}
+  reloadClip: {fileID: 8300000, guid: 9e3c5f6b64bc3e74e8ac3e0dcb40a5f0, type: 3}
+--- !u!114 &114979748525849008
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1519473420722660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b42ad435ab204ee49bc4bae59ca9940f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shootClip: {fileID: 8300000, guid: fde722301da517f429eaec7a286baea1, type: 3}
+  reloadClip: {fileID: 8300000, guid: dd37bc8e9362aae4fba8007a3287374d, type: 3}
 --- !u!124 &124558878427369700
 Behaviour:
   m_ObjectHideFlags: 1
