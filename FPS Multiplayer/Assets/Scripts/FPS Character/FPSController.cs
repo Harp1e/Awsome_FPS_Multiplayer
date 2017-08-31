@@ -249,11 +249,7 @@ public class FPSController : MonoBehaviour
         {
             if (!weapon_Manager.Weapons[0].activeInHierarchy)
             {
-                for (int i = 0; i < weapon_Manager.Weapons.Length; i++)
-                {
-                    weapon_Manager.Weapons[i].SetActive (false);
-                }
-                current_Weapon = null;
+                ResetWeapon ();
                 weapon_Manager.Weapons[0].SetActive (true);
                 current_Weapon = weapon_Manager.Weapons[0].GetComponent<FPSWeapon> ();
 
@@ -265,11 +261,7 @@ public class FPSController : MonoBehaviour
         {
             if (!weapon_Manager.Weapons[1].activeInHierarchy)
             {
-                for (int i = 0; i < weapon_Manager.Weapons.Length; i++)
-                {
-                    weapon_Manager.Weapons[i].SetActive (false);
-                }
-                current_Weapon = null;
+                ResetWeapon ();
                 weapon_Manager.Weapons[1].SetActive (true);
                 current_Weapon = weapon_Manager.Weapons[1].GetComponent<FPSWeapon> ();
 
@@ -281,16 +273,21 @@ public class FPSController : MonoBehaviour
         {
             if (!weapon_Manager.Weapons[2].activeInHierarchy)
             {
-                for (int i = 0; i < weapon_Manager.Weapons.Length; i++)
-                {
-                    weapon_Manager.Weapons[i].SetActive (false);
-                }
-                current_Weapon = null;
+                ResetWeapon ();
                 weapon_Manager.Weapons[2].SetActive (true);
                 current_Weapon = weapon_Manager.Weapons[2].GetComponent<FPSWeapon> ();
 
                 playerAnimation.ChangeController (false);
             }
         }
+    }
+
+    void ResetWeapon ()
+    {
+        for (int i = 0; i < weapon_Manager.Weapons.Length; i++)
+        {
+            weapon_Manager.Weapons[i].SetActive (false);
+        }
+        current_Weapon = null;
     }
 }
