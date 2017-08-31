@@ -1520,6 +1520,7 @@ GameObject:
   - component: {fileID: 114635536985240180}
   - component: {fileID: 114987375339283998}
   - component: {fileID: 114371921029681464}
+  - component: {fileID: 114975537227144244}
   m_Layer: 0
   m_Name: FPS Player
   m_TagString: Untagged
@@ -9178,6 +9179,38 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shootClip: {fileID: 8300000, guid: 8077d84082459fd4ba579dda0e473e20, type: 3}
   reloadClip: {fileID: 8300000, guid: 9e3c5f6b64bc3e74e8ac3e0dcb40a5f0, type: 3}
+--- !u!114 &114975537227144244
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1335451254941152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 25
+    i1: 28
+    i2: 118
+    i3: 193
+    i4: 210
+    i5: 88
+    i6: 3
+    i7: 212
+    i8: 168
+    i9: 9
+    i10: 239
+    i11: 167
+    i12: 30
+    i13: 137
+    i14: 209
+    i15: 174
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 1
 --- !u!114 &114979748525849008
 MonoBehaviour:
   m_ObjectHideFlags: 1
