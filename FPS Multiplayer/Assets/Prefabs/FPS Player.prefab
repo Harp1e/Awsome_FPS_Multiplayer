@@ -326,6 +326,7 @@ GameObject:
   - component: {fileID: 143036396423500720}
   - component: {fileID: 114877214753650554}
   - component: {fileID: 114062845444766978}
+  - component: {fileID: 114635536985240180}
   m_Layer: 0
   m_Name: FPS Player
   m_TagString: Untagged
@@ -1503,7 +1504,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1341735379613510}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.96, z: -0.07}
+  m_LocalPosition: {x: 0, y: 1.96, z: 0.08}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4514732459281132}
@@ -2174,7 +2175,7 @@ Animator:
   m_GameObject: {fileID: 1335451254941152}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: f3aa36c2aed114223bc6a264d9f9018c, type: 3}
-  m_Controller: {fileID: 9100000, guid: 65a3ef3b2d7114ff9845c653037c7b6a, type: 2}
+  m_Controller: {fileID: 9100000, guid: d5691ffcd199cd241b7f5b0955f34fcc, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -2195,6 +2196,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   axes: 0
   invertYAxis: 0
+--- !u!114 &114635536985240180
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1335451254941152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d214a717c6824749b29b9a412498234, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114773163073252430
 MonoBehaviour:
   m_ObjectHideFlags: 1
