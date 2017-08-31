@@ -2849,6 +2849,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d214a717c6824749b29b9a412498234, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animController_Pistol: {fileID: 9100000, guid: d5691ffcd199cd241b7f5b0955f34fcc,
+    type: 2}
+  animController_MachineGun: {fileID: 9100000, guid: 0770a54f266a24bc7b5bd0ee2d2b4f0a,
+    type: 2}
 --- !u!114 &114701502733078962
 MonoBehaviour:
   m_ObjectHideFlags: 1
