@@ -54,6 +54,9 @@ public class FPSController : NetworkBehaviour
     Camera mainCam;
     public FPSMouseLook[] mouseLook;
 
+    Color[] playerColors = new Color[] { new Color (0, 44, 255, 255),
+        new Color (252, 200, 193, 255), new Color (0, 0, 0, 255) };
+    public Renderer playerRenderer;
 
 	void Start () 
 	{
@@ -121,6 +124,14 @@ public class FPSController : NetworkBehaviour
 
         mainCam = transform.Find ("FPS View").Find ("FPS Camera").GetComponent<Camera> ();
         mainCam.gameObject.SetActive (false);
+
+        if (!isLocalPlayer)
+        {
+            for (int i = 0; i < playerRenderer.materials.Length; i++)
+            {
+                playerRenderer.materials[i].color = playerColors[i];
+            }
+        }
     }
 
     public override void OnStartLocalPlayer ()

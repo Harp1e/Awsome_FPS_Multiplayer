@@ -9263,6 +9263,7 @@ MonoBehaviour:
   mouseLook:
   - {fileID: 114062845444766978}
   - {fileID: 114773163073252430}
+  playerRenderer: {fileID: 137829298627517786}
 --- !u!114 &114893913249069640
 MonoBehaviour:
   m_ObjectHideFlags: 1
