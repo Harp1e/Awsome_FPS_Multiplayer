@@ -27,6 +27,10 @@ public class FPSShootingControls : MonoBehaviour
         {
             nextTimeToFire = Time.time + 1f / fireRate;
             RaycastHit hit;
+            if (mainCam == null)
+            {
+                return;
+            }
             if (Physics.Raycast (mainCam.transform.position, mainCam.transform.forward, out hit))
             {
                 Instantiate (concrete_Impact, hit.point, Quaternion.LookRotation(hit.normal));

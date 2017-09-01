@@ -1533,10 +1533,10 @@ GameObject:
   - component: {fileID: 114877214753650554}
   - component: {fileID: 114062845444766978}
   - component: {fileID: 114635536985240180}
-  - component: {fileID: 114987375339283998}
   - component: {fileID: 114371921029681464}
   - component: {fileID: 114975537227144244}
   - component: {fileID: 114900334197529974}
+  - component: {fileID: 114128407954548770}
   m_Layer: 0
   m_Name: FPS Player
   m_TagString: Untagged
@@ -9080,6 +9080,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   axes: 0
   invertYAxis: 0
+--- !u!114 &114128407954548770
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1335451254941152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1590678366, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Animator: {fileID: 95286728126460936}
+  m_ParameterSendBits: 127
+  param0: 
+  param1: 
+  param2: 
+  param3: 
+  param4: 
+  param5: 
 --- !u!114 &114251542051879026
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9308,17 +9327,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shootClip: {fileID: 8300000, guid: fde722301da517f429eaec7a286baea1, type: 3}
   reloadClip: {fileID: 8300000, guid: dd37bc8e9362aae4fba8007a3287374d, type: 3}
---- !u!114 &114987375339283998
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1335451254941152}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 794d0d617f339944eb338653a32362ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!124 &124558878427369700
 Behaviour:
   m_ObjectHideFlags: 1
