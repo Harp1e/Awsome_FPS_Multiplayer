@@ -1534,12 +1534,13 @@ GameObject:
   - component: {fileID: 114062845444766978}
   - component: {fileID: 114635536985240180}
   - component: {fileID: 114371921029681464}
+  - component: {fileID: 114368216293838320}
   - component: {fileID: 114975537227144244}
   - component: {fileID: 114900334197529974}
   - component: {fileID: 114128407954548770}
   m_Layer: 0
   m_Name: FPS Player
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9140,6 +9141,17 @@ MonoBehaviour:
   - {fileID: 1519473420722660}
   - {fileID: 1783639549983690}
   - {fileID: 1744239028035224}
+--- !u!114 &114368216293838320
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1335451254941152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86a8ce08b97bcb44bacd40405f035c31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114371921029681464
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9152,6 +9164,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   concrete_Impact: {fileID: 100002, guid: 2b4ffdf4a64f87d4ca3c0de925e6d343, type: 2}
+  blood_Impact: {fileID: 100006, guid: cb771650f86a58a46ab01616eef4650c, type: 2}
+  damageAmount: 5
 --- !u!114 &114635536985240180
 MonoBehaviour:
   m_ObjectHideFlags: 1

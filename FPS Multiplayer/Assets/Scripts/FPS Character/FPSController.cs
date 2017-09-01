@@ -122,8 +122,13 @@ public class FPSController : NetworkBehaviour
         mainCam = transform.Find ("FPS View").Find ("FPS Camera").GetComponent<Camera> ();
         mainCam.gameObject.SetActive (false);
     }
-	
-	void Update () 
+
+    public override void OnStartLocalPlayer ()
+    {
+        tag = "Player";
+    }
+
+    void Update () 
 	{
         if (isLocalPlayer)
         {
