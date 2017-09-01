@@ -10,7 +10,8 @@ public class FPSShootingControls : NetworkBehaviour
     float fireRate = 15f;
     float nextTimeToFire = 0f;
 
-    [SerializeField] GameObject concrete_Impact, blood_Impact;
+    [SerializeField] GameObject concrete_Impact;
+    [SerializeField] GameObject blood_Impact;
 
     public float damageAmount = 5f;
 
